@@ -1,0 +1,9 @@
+*{
+    \
+    box-sizing: border-box;
+}
+.container{
+    background-color: #E5E5FD;
+    min-height: 100vh;
+    
+}
