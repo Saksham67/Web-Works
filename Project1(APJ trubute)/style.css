@@ -1,9 +1,23 @@
-*{
-    \
-    box-sizing: border-box;
+
+body{
+    background-color: aliceblue;
+  
+    
+    
 }
 .container{
     background-color: #E5E5FD;
-    min-height: 100vh;
+    border: 15px solid navy;
+    padding: 30px;
+    width: 50%;
+    margin-left: 20%;
     
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 180px;
+    
+
 }
