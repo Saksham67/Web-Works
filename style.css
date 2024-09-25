@@ -1,0 +1,76 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('lucky-dice-game-background.jpg');
+    background-size: cover;
+  }
+  
+  h1, h2 {
+    color: #EAD8B1;
+    margin: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff4a33;
+  }
+  
+  .dice-container img {
+    width: 100px;
+    height: 100px;
+    transition: transform 1s ease; /* For rolling animation */
+  }
+  
+  .dice-roll {
+    transform: rotate(360deg); /* Rotate dice during flip */
+  }
+  
+  #result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+    opacity: 0; /* Initially hidden */
+  }
+  
+  #result.win {
+    animation: floatResult 1.5s ease forwards;
+  }
+  
+  #result.lose {
+    animation: shakeResult 1.5s ease forwards;
+    color: red;
+  }
+  
+  @keyframes floatResult {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes shakeResult {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+    100% { opacity: 1; }
+  }
+  
