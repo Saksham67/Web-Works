@@ -4,6 +4,6 @@ function convertTemperature(){
         document.getElementById("result").innerHTML = "Please enter a temperature.";
         return;
     }
-    let fahrenheit =  (parseFloat(celsius) * 9/5) + 32;
+    let Fahrenheit =  (parseFloat(celsius) * 9/5) + 32;
     document.getElementById("result").innerHTML = `Fahrenheit: ${fahrenheit.toFixed(2)}`;
 }
