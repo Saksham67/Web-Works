@@ -1,3 +1,7 @@
-const display = document.getElementById("input");
+const display = document.getElementById("display");
 
-function display()
+function Display(input)
+{
+    display.value += input;
+
+}
