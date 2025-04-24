@@ -11,6 +11,12 @@
 .left{
     width: 60%;
 }
+h3{
+    color: rgba(41, 41, 244, 0.898);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
 .right{
     width: 40%;
     display: flex;
@@ -37,9 +43,8 @@ input{
     border-radius: 5px;
     margin: 5px;
 }
-h3{
-    color: rgba(41, 41, 244, 0.898);
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+
+hr{
+    width: 100%;
+    margin: 5px;
 }
